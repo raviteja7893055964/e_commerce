@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family: "Sour Gummy", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navSection {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.proTitle h2 {
+  margin: 10px;
+}
+
+.proSection {
+  display: flex;
+  background-color: white;
+}
+
+.imgBox {
+  width: 80%;
+  padding-left: 20px;
+}
+
+.proImage {
+  width: 80%;
+}
+.subMenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: gray;
+  color: azure;
+  padding: 10px 0;
+}
+
+.subMenu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.subMenu ul li {
+  list-style: none;
+  margin: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.pageSection {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  gap: 10px;
+  margin-left: 15px;
+}
+
+.pageImg {
+  width: 250px;
+  height: 250px;
+  padding-top: 20px;
+}
+
+.pageImg img {
+  width: 80%;
+}
+
+.title h2 {
+  color: white;
+}
+
+.search {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+.search input {
+  width: 80%;
+  height: 2rem;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: medium;
+}
+
+.user {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ind-image{
+  width: 500px;
+  height: 500px;
+}
+
+.ind-image img{
+  width: 100%;
+}
+.ind-section{
+  display: flex;
+}
+.ind-details{
+  padding: 20px;
+}
+.space{
+  margin: 10px;
+}
+.ind-details button{
+  background-color: orangered;
+  padding: 10px;
+  width: 10rem;
+  border-radius: 5px;
+  color: white;
+}
+
+.fullpage{
+  display: flex;
+}
+.pro-selected{
+  width: 20%;
+  border: 1px solid black;
+}
+.pro-input{
+  margin: 5%;
+}
+
+ul li{
+  color: white;
+}
+.cart span{
+  color: white;
+}
+.cart{
+  color: white;
+}
+Grid2{
+  display: flex;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 1024px) { /* Laptop screens */
+  .navSection {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .search {
+    width: 60%;
+  }
+
+  .subMenu ul li {
+    font-size: 0.9rem;
+    margin: 8px;
+  }
+
+  .ind-details button {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) { /* Mobile screens */
+  .navSection {
+    flex-direction: column;
+    padding: 10px;
+    align-items: self-start;
+   
+  }
+
+  .title h2 {
+    font-size: 1.5rem;
+    align-items: left;
+    align-items: flex-start;
+    margin-bottom: 5px;
+  }
+
+  .search {
+    width: 50%;
+    align-items:center;
+    
+    display: flex;
+    margin-bottom: 10px;
+    
+  }
+ .userDetails{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  
+ }
+
+  .user {
+    flex-direction: column;
+    align-items: center;
+    align-content: start;
+    display: inline;
+  }
+
+  .subMenu ul li {
+    font-size: 0.9rem;
+  }
+
+  .pageSection {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .ind-details {
+    text-align: center;
+  }
+
+  .ind-details button {
+    width: 100%;
+  }
+}

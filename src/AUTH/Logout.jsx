@@ -10,7 +10,7 @@ const Logout = () => {
         e.preventDefault();
 
 
-        axios.post("http://localhost:5000/logout", { email, password })
+        axios.post("https://e-commerce-cwv3.onrender.com/logout", { email, password })
             .then(result => {
                 console.log(result);
                 if (result.data === "success") {

@@ -9,7 +9,7 @@ const Login = () => {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        axios.post("https://e-commerce-cwv3.onrender.com/login", { email, password })
+        axios.post("http://localhost:5000/login", { email, password })
             .then(result => {
                 console.log(result);
                 if (result.data === "success") {

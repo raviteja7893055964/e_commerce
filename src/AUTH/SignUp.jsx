@@ -12,7 +12,7 @@ function SignUp() {
     const handleSignup = (e) => {
         e.preventDefault();
         axios
-            .post("https://e-commerce-cwv3.onrender.com/signup", { name, email, password })
+            .post("http://localhost:5000/signup", { name, email, password })
             .then((result) => {
                 console.log(result);
                 navigate("/");

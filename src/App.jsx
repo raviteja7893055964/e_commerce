@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import LandingPage from './stores/pages/landingPage'
+import LandingPage from './stores/pages/LandingPage'
 import { Route, Routes } from 'react-router-dom'
 import MobilePage from './stores/pages/MobilePage'
 import AcPage from './stores/pages/AcPage'
@@ -25,6 +25,7 @@ import MenSingle from './stores/singles/MenSingle'
 import FurnitureSingle from './stores/singles/FurnitureSingle'
 import FridgeSingle from './stores/singles/FridgeSingle'
 import KitchenSingle from './stores/singles/KitchenSingle'
+
 function App() {
   return (
     <div>

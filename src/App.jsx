@@ -31,9 +31,9 @@ function App() {
     <div>
 
       <Routes>
-        <Route path='https://roaring-sunshine-d3a623.netlify.app/login' element={<Login />} />
-        <Route path='https://roaring-sunshine-d3a623.netlify.app/signup' element={<SignUp />} />
-        <Route path='https://roaring-sunshine-d3a623.netlify.app/logout' element={<Logout />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/signup' element={<SignUp />} />
+        <Route path='/logout' element={<Logout />} />
 
         <Route path='/home' element={<LandingPage />} />
         <Route path='/' element={<LandingPage />} />

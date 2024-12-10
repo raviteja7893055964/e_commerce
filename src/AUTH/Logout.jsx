@@ -10,7 +10,7 @@ const Logout = () => {
         e.preventDefault();
 
 
-        axios.post("https://roaring-sunshine-d3a623.netlify.app//logout", { email, password })
+        axios.post("https://roaring-sunshine-d3a623.netlify.app/logout", { email, password })
             .then(result => {
                 console.log(result);
                 if (result.data === "success") {

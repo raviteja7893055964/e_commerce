@@ -12,7 +12,7 @@ function SignUp() {
     const handleSignup = (e) => {
         e.preventDefault();
         axios
-            .post("http://localhost:5000/signup", { name, email, password })
+            .post("https://roaring-sunshine-d3a623.netlify.app//signup", { name, email, password })
             .then((result) => {
                 console.log(result);
                 navigate("/");
